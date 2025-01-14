@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">  
+  <title>Fruit Shop - Fresh Fruits for Sale</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Header Section -->
+  <header>
+    <div class="logo">
+      <marquee><h1>WELCOME TO THE SPENSA JD 6 FRUITS SHOP ONLINE SERVICES</h1></marquee>
+    </div>
+    <div class="cart">
+      <button id="cartBtn" onclick="showCart()">Cart (0)</button>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main>
+    <section class="fruit-items">
+      <marquee behavior="scroll" direction="down" scrollamount="3"><h2>OUR FRESH FRUITS</h2></marquee>
+      <!-- Fruit 1 -->
+      <div class="fruit-item" id="apple">
+        <img src="apple.jpg" alt="Apple">
+        <h3>Apple</h3>
+        <p>$2.00 each</p>
+        <button onclick="addToCart('Apple', 2)">Add to Cart</button>
+      </div>
+      <!-- Fruit 2 -->
+      <div class="fruit-item" id="banana">
+        <img src="banana.jpg" alt="Banana">
+        <h3>Banana</h3>
+        <p>$1.00 each</p>
+        <button onclick="addToCart('Banana', 1)">Add to Cart</button>
+      </div>
+      <!-- Fruit 3 -->
+      <div class="fruit-item" id="orange">
+        <img src="orange.jpg" alt="Orange">
+        <h3>Orange</h3>
+        <p>$1.50 each</p>
+        <button onclick="addToCart('Orange', 1.5)">Add to Cart</button>
+      </div>
+      <!-- Fruit 4 -->
+      <div class="fruit-item" id="grape">
+        <img src="grape.jpg" alt="Grape">
+        <h3>Grape</h3>
+        <p>$3.00 each</p>
+        <button onclick="addToCart('Grape', 3)">Add to Cart</button>
+      </div>
+      <!-- Fruit 5 -->
+      <div class="fruit-item" id="pineapple">
+        <img src="pineapple.jpg" alt="Pineapple">
+        <h3>Pineapple</h3>
+        <p>$4.00 each</p>
+        <button onclick="addToCart('Pineapple', 4)">Add to Cart</button>
+      </div>
+      <!-- Fruit 6 -->
+      <div class="fruit-item" id="mango">
+        <img src="mango.jpg" alt="Mango">
+        <h3>Mango</h3>
+        <p>$2.50 each</p>
+        <button onclick="addToCart('Mango', 2.5)">Add to Cart</button>
+      </div>
+      <!-- Fruit 7 -->
+      <div class="fruit-item" id="watermelon">
+        <img src="watermelon.jpg" alt="Watermelon">
+        <h3>Watermelon</h3>
+        <p>$5.00 each</p>
+        <button onclick="addToCart('Watermelon', 5)">Add to Cart</button>
+      </div>
+      <!-- Fruit 8 -->
+      <div class="fruit-item" id="kiwi">
+        <img src="kiwi.jpg" alt="Kiwi">
+        <h3>Kiwi</h3>
+        <p>$3.50 each</p>
+        <button onclick="addToCart('Kiwi', 3.5)">Add to Cart</button>
+      </div>
+      <!-- Fruit 9 -->
+      <div class="fruit-item" id="strawberry">
+        <img src="strawberry.jpg" alt="Strawberry">
+        <h3>Strawberry</h3>
+        <p>$2.80 each</p>
+        <button onclick="addToCart('Strawberry', 2.8)">Add to Cart</button>
+      </div>
+    </section>
+  </main>
+
+  <!-- Shopping Cart Modal -->
+  <div id="cartModal" class="cart-modal">
+    <div class="cart-content">
+      <h3>Your Cart</h3>
+      <ul id="cartList"></ul>
+      <p>Total: $<span id="totalPrice">0.00</span></p>
+      <button onclick="closeCart()">Close</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
